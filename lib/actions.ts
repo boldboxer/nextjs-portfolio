@@ -44,7 +44,17 @@ export async function subscribe(data: NewsletterFormInputs) {
     return { error: result.error.format() }
   }
 
-  // try {
+  try {
+    const { email } = result.data
+    const { data, error } = await resend.contacts.create({
+      email: email,
+      audienceId: process.env.RESEND_AUDIENCE_ID as string
+    })
+
+    if (!data || error) {
+      throw new Error('Failed to subscribe')
+    }
+     // try {
   //   const { email } = result.data
   //   const { data, error } = await resend.contacts.create({
   //     email: email,
@@ -58,7 +68,7 @@ export async function subscribe(data: NewsletterFormInputs) {
     // TODO: Send a welcome email
 
     return { success: true }
-  // } catch (error) {
-  //   return { error }
-  // }
+  } catch (error) {
+    return { error }
+  }
 }

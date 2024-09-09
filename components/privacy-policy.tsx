@@ -9,7 +9,6 @@ This Privacy Policy outlines how [Your Company Name] collects, uses, and protect
 
 ## Information We Collect   
 
-
 We may collect the following information from you:
 
 * **Email address:** This is required if you choose to contact us or subscribe to our newsletter.
@@ -49,11 +48,8 @@ We may update this Privacy Policy from time to  
 ## Contact Us
 
 If you have any questions about this Privacy Policy or our   
- practices, please contact us at [Your Contact Information].
-
-**Sources and related content:**
-
-* You can remove this section as it's not relevant to the privacy policy itself. 
+ practices, please contact us at [Contact Information].
+ 
     `
     return (
       <section className="pb-24 pt-40">
