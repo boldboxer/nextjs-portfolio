@@ -19,8 +19,8 @@ export async function sendEmail(data: ContactFormInputs) {
   try {
     const { name, email, message } = result.data
     const { data, error } = await resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: 'ebesteinpr@gmail.com',
+      from: 'info@madmane.online',
+      to: email,
       cc: ['ebesteinpr@gmail.com'],
       subject: 'Contact form submission',
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
