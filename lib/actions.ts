@@ -20,7 +20,7 @@ export async function sendEmail(data: ContactFormInputs) {
     const { name, email, message } = result.data
     const { data, error } = await resend.emails.send({
       from: 'info@madmane.online',
-      to: email,
+      to: 'ebesteinpr@gmail.com',
       cc: ['ebesteinpr@gmail.com'],
       subject: 'Contact form submission',
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
@@ -67,8 +67,10 @@ export async function subscribe(data: NewsletterFormInputs) {
 
     // TODO: Send a welcome email
 
+    console.log(data)
     return { success: true }
   } catch (error) {
+    console.log(error)
     return { error }
   }
 }
