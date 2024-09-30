@@ -67,10 +67,9 @@ export async function subscribe(data: NewsletterFormInputs) {
 
     // TODO: Send a welcome email
 
-    console.log(data)
-    return { success: true }
+    // return { success: true }
   } catch (error) {
-    console.log(error)
+    console.error("Error creating contact:", error);
     return { error }
   }
 }
