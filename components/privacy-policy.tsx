@@ -48,7 +48,7 @@ We may update this Privacy Policy from time to  
 ## Contact Us
 
 If you have any questions about this Privacy Policy or our   
- practices, please contact us at [Contact Information].
+ practices, please contact us at [info@madmane.online](mailto:info@madmane.online) .
  
     `
     return (
